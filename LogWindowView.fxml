@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="theWhole" maxHeight="678.0" maxWidth="1080.0" minHeight="678.0" minWidth="1080.0" prefHeight="678.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LogWindowController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="118.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@YourCompany%20Logo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="367.0" layoutY="87.0" text="Your Company Work Order">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" layoutX="343.0" layoutY="288.0" spacing="10.0" AnchorPane.leftAnchor="408.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#newOrder" text="Create New Work Order">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#searchOrder" prefWidth="300.0" text="Search for Work Order">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#sendReport" prefWidth="300.0" text="Send Report">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#exit" prefHeight="54.0" prefWidth="300.0" text="Exit">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label fx:id="date" layoutX="829.0" layoutY="123.0" text="Label">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

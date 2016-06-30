@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="theWhole" minHeight="678.0" minWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SearchWindowController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="118.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@YourCompany%20Logo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="367.0" layoutY="87.0" text="Your Company Work Order">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Button layoutX="526.0" layoutY="394.0" mnemonicParsing="false" onAction="#search" text="Search">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="926.0" layoutY="585.0" mnemonicParsing="false" onAction="#goBack" text="Go Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="363.0" layoutY="326.0" prefHeight="27.0" prefWidth="214.0" styleClass="brightFonts" text="Enter Work Order #:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="orderNumber" layoutX="540.0" layoutY="320.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

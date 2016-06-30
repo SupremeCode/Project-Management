@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="theWhole" minHeight="590.0" minWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ProcessWindowController">
+   <children>
+      <GridPane layoutX="46.0" layoutY="115.0" prefHeight="358.0" prefWidth="998.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="676.0" minWidth="10.0" prefWidth="604.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="273.0" minWidth="10.0" prefWidth="31.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="273.0" minWidth="3.0" prefWidth="26.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="273.0" minWidth="10.0" prefWidth="168.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="273.0" minWidth="10.0" prefWidth="168.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints vgrow="SOMETIMES" />
+          <RowConstraints vgrow="SOMETIMES" />
+          <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label styleClass="brightFonts" text="Cut Material to Size (Torch, Grind, Saw, Cut)" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label styleClass="brightFonts" text="Machine (Drill, Mill, Grind, Turn, Thread)" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label styleClass="brightFonts" text="Set up M/C to Shape/Diameter-Roll/Bend/Form as required dimension" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label styleClass="brightFonts" text="Stamp or Mark P/N, HT No." GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label styleClass="brightFonts" text="Inspect (Record envelope dimensions, critical dimensions)" GridPane.rowIndex="5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label styleClass="brightFonts" text="Take photos/ Record serial number/ Prepare for Shipment" GridPane.rowIndex="6">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label styleClass="brightFonts" text="Ship" GridPane.rowIndex="7">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="29.0" text="YES" textAlignment="CENTER" GridPane.columnIndex="1" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="28.0" text="NO" textAlignment="CENTER" GridPane.columnIndex="2" />
+            <Label styleClass="brightFonts" text="Completion Sign of, Record Date" GridPane.rowIndex="8">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="173.0" text="Worker Name" textAlignment="CENTER" GridPane.columnIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="w1" promptText="(Enter name if &quot;YES&quot;)" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="w2" promptText="(Enter name if &quot;YES&quot;)" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="w3" promptText="(Enter name if &quot;YES&quot;)" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="w4" promptText="(Enter name if &quot;YES&quot;)" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="w5" promptText="(Enter name if &quot;YES&quot;)" GridPane.columnIndex="4" GridPane.rowIndex="5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="w6" promptText="(Enter name if &quot;YES&quot;)" GridPane.columnIndex="4" GridPane.rowIndex="6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="w7" promptText="(Enter name if &quot;YES&quot;)" GridPane.columnIndex="4" GridPane.rowIndex="7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="w8" promptText="(Enter name if &quot;YES&quot;)" GridPane.columnIndex="4" GridPane.rowIndex="8">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <RadioButton fx:id="yes1" mnemonicParsing="false" prefHeight="17.0" prefWidth="7.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <RadioButton fx:id="no1" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <RadioButton fx:id="yes2" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <RadioButton fx:id="no2" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <RadioButton fx:id="yes3" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <RadioButton fx:id="no3" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <RadioButton fx:id="yes4" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <RadioButton fx:id="no4" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <RadioButton fx:id="yes5" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <RadioButton fx:id="no5" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <RadioButton fx:id="yes6" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <RadioButton fx:id="no6" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <RadioButton fx:id="yes7" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <RadioButton fx:id="no7" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <RadioButton fx:id="yes8" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <RadioButton fx:id="no8" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <Label styleClass="brightFonts" text="9.)">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="169.0" text="Description" textAlignment="CENTER" GridPane.columnIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="d1" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="d2" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="d3" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="d4" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="d5" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="d6" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="d7" GridPane.columnIndex="3" GridPane.rowIndex="7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="d8" GridPane.columnIndex="3" GridPane.rowIndex="8">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <Button layoutX="893.0" layoutY="521.0" mnemonicParsing="false" onAction="#save" text="Save">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="964.0" layoutY="521.0" mnemonicParsing="false" onAction="#close" text="Close">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="46.0" layoutY="44.0" styleClass="brightFonts" text="Work Order #:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="71.0" styleClass="brightFonts" text="Project Name:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="receiptNumber" layoutX="210.0" layoutY="42.0" styleClass="emphasized" text="100021">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="projectName" layoutX="210.0" layoutY="71.0" styleClass="brightFonts" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
